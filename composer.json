@@ -1,0 +1,27 @@
+{
+  "name": "mawoo/migrationeditor",
+  "type": "project",
+  "description": "Monitor, live edit and schedule your migration project.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bob van der Valk",
+      "email": "b.vandervalk@mawoo.nl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Mawoo\\Editor\\": "Business/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "*",
+      ".*",
+      "!/src/*"
+    ]
+  }
+}
