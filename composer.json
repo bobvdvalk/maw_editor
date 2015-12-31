@@ -11,6 +11,7 @@
     }
   ],
   "require": {
+      "symfony/finder": "v3.0.1"
   },
   "autoload": {
     "psr-4": {
