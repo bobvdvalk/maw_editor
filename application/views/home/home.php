@@ -5,6 +5,7 @@
                 <h1>Migration monitor</h1>
             </div>
             <p>This is where you can schedule/edit/add operations of your migration.</p>
+            <pre id="editor"></pre>
         </div>
     </div>
 </div>
