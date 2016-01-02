@@ -9,6 +9,6 @@
 class ComposerLoader
 {
     public function __construct() {
-        include './vendor/autoload.php';
+        require_once('./vendor/autoload.php');
     }
 }
