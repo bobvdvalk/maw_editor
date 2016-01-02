@@ -12,7 +12,7 @@ $this->load->helper('url');
     <?php $this->load->helper('url'); ?>
     ace.require("ace/ext/language_tools");
     var editor = ace.edit("editor");
-    editor.session.setMode("ace/mode/php");
+    editor.session.setMode("ace/mode/javascript");
     editor.setTheme("ace/theme/tomorrow");
 </script>
 </body>
