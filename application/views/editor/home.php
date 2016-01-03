@@ -5,6 +5,12 @@
             <div class="page-header">
                 <h1>Exporer</h1>
             </div>
+            <?php
+            foreach($file_array as $file) {
+                echo $file ."<br />";
+            }
+
+            ?>
         </div>
     </div>
 </div>

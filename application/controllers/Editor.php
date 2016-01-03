@@ -7,13 +7,18 @@
  * Time: 18:56
  */
 use Symfony\Component\Finder\Finder;
+use Mawoo\Editor\DefaultEditorImpl;
+
 
 class Editor extends CI_Controller
 {
     public function index() {
         $this->load->view("template/header");
 
-        $this->load->view("editor/home");
+        $files = new DefaultEditorImpl();
+        $data['file_array'] = $files->GetFiles();
+
+        $this->load->view("editor/home", $data);
 
         $this->load->view("template/footer");
     }
