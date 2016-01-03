@@ -6,7 +6,6 @@
  * Date: 31-12-2015
  * Time: 18:56
  */
-use Symfony\Component\Finder\Finder;
 use Mawoo\Editor\DefaultEditorImpl;
 
 
