@@ -27,6 +27,17 @@ $config['base_url'] = 'http://localhost/';
 
 /*
 |--------------------------------------------------------------------------
+| Project folder
+|--------------------------------------------------------------------------
+|
+| Set here your input file location
+| This is a custom function wrote by Mawoo.
+| The function is in the url_helper file.
+|
+*/
+$config['project_location'] = 'C:\xampp\htdocs\maw_editor';
+/*
+|--------------------------------------------------------------------------
 | Index File
 |--------------------------------------------------------------------------
 |

@@ -88,6 +88,14 @@ if ( ! function_exists('base_url'))
 	}
 }
 
+if ( ! function_exists('project_location'))
+{
+    function project_location()
+    {
+        return get_instance()->config->project_location();
+    }
+}
+
 // ------------------------------------------------------------------------
 
 if ( ! function_exists('current_url'))

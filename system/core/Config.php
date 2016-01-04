@@ -99,9 +99,15 @@ class CI_Config {
 			}
 
 			$this->set_item('base_url', $base_url);
-		}
+        }
 
-		log_message('info', 'Config Class Initialized');
+        if(empty($this->config['project_location'])) {
+            $this->set_item('project_location', __DIR__);
+        }
+
+        $this->set_item('project_location', $this->config['project_location']);
+
+        log_message('info', 'Config Class Initialized');
 	}
 
 	// --------------------------------------------------------------------
@@ -312,6 +318,16 @@ class CI_Config {
 
 		return $base_url.ltrim($this->_uri_string($uri), '/');
 	}
+
+    /**
+     * Custom function by Mawoo
+     * Return the project url
+     * @return string
+     */
+    public function project_location()
+    {
+        return $this->slash_item('project_location');
+    }
 
 	// -------------------------------------------------------------
 
