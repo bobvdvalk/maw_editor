@@ -90,6 +90,12 @@ if ( ! function_exists('base_url'))
 
 if ( ! function_exists('project_location'))
 {
+    /**
+     * Project location
+     *
+     * Get the project location that the user has set-up in the config file.
+     * @return string
+     */
     function project_location()
     {
         return get_instance()->config->project_location();
