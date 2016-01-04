@@ -12,10 +12,12 @@ use Mawoo\Editor\DefaultEditorImpl;
 class Editor extends CI_Controller
 {
     public function index() {
+        $this->load->helper('url');
+
         $this->load->view("template/header");
 
         $files = new DefaultEditorImpl();
-        $data['file_array'] = $files->GetFiles();
+        $data['file_array'] = $files->GetFiles(project_location());
 
         $this->load->view("editor/home", $data);
 
