@@ -33,6 +33,12 @@ class Editor extends CI_Controller
         $data['content'] = $file->OpenFile($data['file']);
         $data['extension'] = $file->CheckFileExtension($data['file']);
 
+        if(is_writeable($data['file'])) {
+            $data['writable'] = '<span class="check" id="writable">Writable</span>';
+        } else {
+            $data['writable'] = '<span class="check" id="notwritable">Not writable</span>';
+        }
+
         $this->load->view("template/header");
         $this->load->view("editor/editor.php", $data);
         $this->load->view("template/footer");

@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="page-header">
-                <h1><?php echo $file; ?></h1>
+                <h3><?php echo $file; ?></h3>
+                <p><?php echo $writable; ?></p>
             </div>
             <pre id="editor"><?php echo $content; ?></pre>
         </div>
