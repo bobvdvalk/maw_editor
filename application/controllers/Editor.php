@@ -22,9 +22,19 @@ class Editor extends CI_Controller
         $this->load->view("template/footer");
     }
 
-    public function edit($file) {
-        $this->load->view("template/header");
+    public function edit() {
+        $data['file'] = $this->input->get('url');
 
+        if(empty($data['file'])) {
+            show_404();
+        }
+
+        $file = new DefaultEditorImpl();
+        $data['content'] = $file->OpenFile($data['file']);
+        $data['extension'] = $file->CheckFileExtension($data['file']);
+
+        $this->load->view("template/header");
+        $this->load->view("editor/editor.php", $data);
         $this->load->view("template/footer");
     }
 }

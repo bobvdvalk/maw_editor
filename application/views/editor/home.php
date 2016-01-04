@@ -3,13 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="page-header">
-                <h1>Exporer</h1>
+                <h1>Explorer</h1>
             </div>
             <?php
             foreach($file_array as $file) {
-                echo $file ."<br />";
+                echo '<a href="'. base_url(). 'editor/edit/test?url='. $file .'">';
+                echo $file ."</a><br />";
             }
-
             ?>
         </div>
     </div>

@@ -9,6 +9,7 @@
 namespace Mawoo\Editor;
 
 use ErrorException;
+use Mawoo\Editor\Exceptions\FileException;
 
 abstract class AbstractEditor implements Editor
 {
@@ -33,10 +34,17 @@ abstract class AbstractEditor implements Editor
      * Open a file with the location
      * @param string $location
      * @return object
+     * @throws FileException
      */
     public function OpenFile($location)
     {
-        // TODO: Implement OpenFile() method.
+        if($this->CheckFileExtension($location) != false) {
+            $file = $this->LoadFile($location);
+
+            return $file;
+        } else {
+            throw new FileException("Can't open file! Wrong extension", MAWOO_EDITOR_FILE_WRONG_EXT);
+        }
     }
 
     /**
@@ -58,5 +66,9 @@ abstract class AbstractEditor implements Editor
 
     public abstract function LoadFiles($location);
 
+    public abstract function LoadFile($location);
+
     public abstract function save($content, $location);
+
+    public abstract function CheckFileExtension($location);
 }
