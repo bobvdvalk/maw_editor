@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/';
 | The function is in the url_helper file.
 |
 */
-$config['project_location'] = 'C:\xampp\htdocs\datado-data';
+$config['project_location'] = 'C:\xampp\htdocs\maw_editor';
 /*
 |--------------------------------------------------------------------------
 | Index File
