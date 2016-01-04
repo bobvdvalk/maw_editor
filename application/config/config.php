@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/';
 | The function is in the url_helper file.
 |
 */
-$config['project_location'] = 'C:\xampp\htdocs\jsTree\vakata-jstree-8ea6ce7\demo\filebrowser\pannekoek\root';
+$config['project_location'] = 'C:\xampp\htdocs\datado-data';
 /*
 |--------------------------------------------------------------------------
 | Index File
