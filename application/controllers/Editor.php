@@ -12,8 +12,6 @@ use Mawoo\Editor\DefaultEditorImpl;
 class Editor extends CI_Controller
 {
     public function index() {
-        $this->load->helper('url');
-
         $this->load->view("template/header");
 
         $files = new DefaultEditorImpl();
