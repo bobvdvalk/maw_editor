@@ -67,7 +67,7 @@ class DefaultEditorImpl extends AbstractEditor
             case "css":
                 return self::CSS;
             default:
-                return false;
+                return self::TXT;
         }
     }
 }
