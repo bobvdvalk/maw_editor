@@ -7,7 +7,7 @@
             </div>
             <?php
             foreach($file_array as $file) {
-                echo '<a href="'. base_url(). 'editor/edit/test?url='. $file .'">';
+                echo '<a href="'. base_url(). 'editor/edit/?url='. $file .'">';
                 echo $file ."</a><br />";
             }
             ?>
