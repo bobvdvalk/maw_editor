@@ -13,10 +13,10 @@ use Symfony\Component\Finder\Finder;
 class DefaultEditorImpl extends AbstractEditor
 {
 
-    public function LoadFiles()
+    public function LoadFiles($location)
     {
         $finder = new Finder();
-        $finder->files()->in(__DIR__);
+        $finder->files()->in($location);
 
         $file_array = array();
 

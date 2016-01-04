@@ -14,9 +14,10 @@ interface Editor
     /**
      * Get all files from top folder.
      * Using the symfony library
-     * return array
+     * @param string $location
+     * @return array
      */
-    public function GetFiles();
+    public function GetFiles($location);
 
     /**
      * Open a file with the location

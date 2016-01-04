@@ -16,11 +16,14 @@ abstract class AbstractEditor implements Editor
      * Get all files from top folder.
      * Using the symfony library
      * return array
+     * @param $location
+     * @return array
+     * @throws ErrorException
      */
-    public function GetFiles()
+    public function GetFiles($location)
     {
         try {
-            return $this->LoadFiles();
+            return $this->LoadFiles($location);
         } catch(ErrorException $e) {
             throw new ErrorException("Can load files ". $e);
         }
@@ -53,7 +56,7 @@ abstract class AbstractEditor implements Editor
         }
     }
 
-    public abstract function LoadFiles();
+    public abstract function LoadFiles($location);
 
     public abstract function save($content, $location);
 }
