@@ -11,6 +11,8 @@ $this->load->helper('url');
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url(); ?>assets/css/stylesheet.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/ace/ace.js"></script>
 </head>
 <body>
 <div id="wrapper">
