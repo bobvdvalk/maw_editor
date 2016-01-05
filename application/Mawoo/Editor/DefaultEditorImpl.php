@@ -30,7 +30,12 @@ class DefaultEditorImpl extends AbstractEditor
 
     public function save($content, $location)
     {
-        // TODO: Implement save() method.
+        try {
+            file_put_contents($location, $content);
+            return true;
+        } catch(FileException $e) {
+            throw new FileException("Can't save the file. ". $e, MAWOO_EDITOR_FILE_CANT_WRITE);
+        }
     }
 
     public function LoadFile($location)

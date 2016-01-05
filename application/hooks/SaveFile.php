@@ -5,12 +5,17 @@
  * Date: 5-1-2016
  * Time: 19:17
  */
+include '../../vendor/autoload.php';
 
-$file = urldecode($_POST['location']);
+use Mawoo\Editor\Editor;
+
+$location = urldecode($_POST['location']);
 $content = $_POST['content'];
 
-if(file_put_contents($file, $content)) {
-    echo "Last save: ". date("now");
+$file = new \Mawoo\Editor\DefaultEditorImpl();
+
+if($file->SaveFile($content, $location)) {
+    echo "Last update: " . date("F j, Y, g:i a");
 } else {
-    echo 'error';
+    echo "Something wen't wrong!";
 }
