@@ -121,3 +121,18 @@ html { height: 100%;}
         background-color: #ab1700;
         width: 80px;
     }
+
+/* Edit bar */
+.edit_bar {
+    background-color: #CCC;
+    height: 30px;
+    margin: 5px 0px;
+    border-radius: 7px;
+    font-size: 21px;
+}
+
+    .bar_links {
+        list-style: none;
+        display: inline-block;
+        padding: 0px 25px;
+    }

@@ -7,6 +7,7 @@
 
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="<?php echo base_url(); ?>assets/css/stylesheet.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/ace/ace.js"></script>
