@@ -7,15 +7,17 @@
  */
 include '../../vendor/autoload.php';
 
-use Mawoo\Editor\Editor;
+use Mawoo\Editor\DefaultEditorImpl;
 
-$location = urldecode($_POST['location']);
-$content = $_POST['content'];
+if(isset($_POST)) {
+    $location = urldecode($_POST['location']);
+    $content = $_POST['content'];
 
-$file = new \Mawoo\Editor\DefaultEditorImpl();
+    $file = new DefaultEditorImpl();
 
-if($file->SaveFile($content, $location)) {
-    echo "Last update: " . date("F j, Y, g:i a");
-} else {
-    echo "Something wen't wrong!";
+    if($file->SaveFile($content, $location)) {
+        echo "Last update: " . date("F j, Y, g:i a");
+    } else {
+        echo "Something wen't wrong!";
+    }
 }
