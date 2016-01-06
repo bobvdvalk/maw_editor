@@ -11,6 +11,7 @@
       "role": "Developer"
     }
   ],
+  "minimum-stability": "master",
   "require": {
       "symfony/finder": "v3.0.1"
   },
