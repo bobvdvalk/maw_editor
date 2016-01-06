@@ -2,6 +2,6 @@ Testing
 
 <?php function test($value) {
     return $value;
-} ?>
+}
 
-Awesome
+echo test("12");
