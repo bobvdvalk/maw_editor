@@ -3,11 +3,6 @@
         <div class="row">
             <div class="page-header">
                 <h3><?php echo $file; ?></h3>
-                <div class="edit_bar">
-                    <ul class="bar_links">
-                        <li><a href="#" onclick="SaveFile(); return false;"><i class="fa fa-floppy-o"></i></a></li>
-                    </ul>
-                </div>
                 <p><?php echo $writable; ?></p>
             </div>
             <pre id="editor"><?php echo $content; ?></pre>
