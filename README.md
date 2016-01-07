@@ -1,4 +1,6 @@
 # maw_editor
+[![Latest Stable Version](https://poser.pugx.org/mawoo/migrationeditor/version)](https://packagist.org/packages/mawoo/migrationeditor) [![Latest Unstable Version](https://poser.pugx.org/mawoo/migrationeditor/v/unstable)](//packagist.org/packages/mawoo/migrationeditor) [![Total Downloads](https://poser.pugx.org/mawoo/migrationeditor/downloads)](https://packagist.org/packages/mawoo/migrationeditor)
+
 Simple online IDE to work fast on remote projects.
 
 # Set-up
