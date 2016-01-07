@@ -3,7 +3,6 @@
   "type": "project",
   "description": "Monitor, live edit and schedule your migration project.",
   "license": "MIT",
-  "version": "0.0.1",
   "authors": [
     {
       "name": "Bob van der Valk",
