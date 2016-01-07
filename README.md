@@ -1,7 +1,7 @@
 # maw_editor
 Simple online IDE to work fast on remote projects.
 
-# set-up
+# Set-up
 * Download the zip
 * Install the composer files, by typing ```composer install```
 * Set up the CodeIgither config file. Also edit the project location to get the project you want to edit.
